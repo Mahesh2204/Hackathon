@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Cucumber.Tests.testRunnerSmoke">
+      <class name="Main_TestNG.SmokeTesting">
         <methods>
-          <include name="setUpClass"/>
-          <include name="runScenario" invocation-numbers="0"/>
-          <include name="tearDownClass"/>
+          <include name="setup"/>
+          <include name="Loan_cal3"/>
+          <include name="close"/>
         </methods>
-      </class> <!-- Cucumber.Tests.testRunnerSmoke -->
+      </class> <!-- Main_TestNG.SmokeTesting -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

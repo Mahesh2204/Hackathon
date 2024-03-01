@@ -3,6 +3,7 @@ package Main_TestNG;
 import java.awt.AWTException;
 import java.io.File;
 import java.io.IOException;
+import java.net.MalformedURLException;
 import java.time.Duration;
 
 import org.openqa.selenium.OutputType;
@@ -16,11 +17,11 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import Project_POM.CarPOM;
-import Project_POM.DriverSetup;
 import Project_POM.HomePOM;
 import Project_POM.LoanCal1;
 import Project_POM.LoanCal2;
 import Project_POM.LoanCal3;
+import Resources.DriverSetup;
 import Resources.Screenshots;
 @Listeners(Main_TestNG.ExtentReportManager.class)
 public class RegressionTesting  {
@@ -35,7 +36,7 @@ public class RegressionTesting  {
 	DriverSetup d;
 
 	@BeforeClass
-	void setup() throws InterruptedException
+	void setup() throws InterruptedException, MalformedURLException
 	{
 //		WebDriverManager.chromedriver().setup();
 		d = new DriverSetup();

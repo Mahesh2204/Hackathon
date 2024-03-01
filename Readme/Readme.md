@@ -33,7 +33,7 @@ Automation Flow
 
 1. Navigate to EMI calculator site.
 
-2. Click on car loan and give values as Principal “1500000”, Interest “9.5”, Time “1 year”.
+2. Click on car loan and give values as Principal “1100000”, Interest “7.2”, Time “7 year”.
 
 3. Display the interest amount & principal amount for one month.
 

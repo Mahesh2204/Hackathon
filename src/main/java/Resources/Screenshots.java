@@ -15,7 +15,7 @@ public class Screenshots {
 	d.manage().timeouts().implicitlyWait(Duration.ofSeconds(4));
 	TakesScreenshot ts=(TakesScreenshot)d;
 	File src=ts.getScreenshotAs(OutputType.FILE);
-	File trg=new File("C:\\Users\\2303750\\eclipse-workspace\\MainProject-full\\MainProject\\Screenshots\\"+name+".png");
+	File trg=new File("C:\\Users\\2303750\\eclipse-workspace\\EMI\\MainProject-full\\MainProject\\Screenshots\\"+name+".png");
 	FileUtils.copyFile(src,trg);
 	}
 

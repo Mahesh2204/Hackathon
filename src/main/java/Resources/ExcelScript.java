@@ -22,7 +22,7 @@ public class ExcelScript {
 
 	public ExcelScript() throws IOException {
 		file = new FileInputStream(
-				"C:\\Users\\2303750\\eclipse-workspace\\MainProject-full\\MainProject\\DataSet\\EmiCalc_Data.xlsx");
+				"C:\\Users\\2303750\\eclipse-workspace\\EMI\\MainProject-full\\MainProject\\DataSet\\EmiCalc_Data.xlsx");
 		workbook = new XSSFWorkbook(file);
 		sheet = workbook.getSheet("InputData");
 
@@ -63,7 +63,7 @@ public class ExcelScript {
 	public void HomeLone_write(WebElement LoanTable) throws IOException {
 
 		FileOutputStream file = new FileOutputStream(
-				"C:\\Users\\2303750\\eclipse-workspace\\MainProject-full\\MainProject\\DataSet\\EmiCalc_DataWrite.xlsx");
+				"C:\\Users\\2303750\\eclipse-workspace\\EMI\\MainProject-full\\MainProject\\DataSet\\EmiCalc_DataWrite.xlsx");
 		XSSFWorkbook workbook = new XSSFWorkbook();
 		XSSFSheet sheet = workbook.createSheet();
 		int table_row = LoanTable.findElements(By.xpath("tr")).size();

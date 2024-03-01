@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-failed">Default suite</span>
+              <span class="suite-name border-passed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\2303750\AppData\Local\Temp\1\testng-eclipse--1012119229\testng-customsuite.xml</span>
+                    <span>C:\Users\2303750\AppData\Local\Temp\2\testng-eclipse--745278685\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -61,7 +61,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="group-Default_suite" class="navigator-link ">
-                    <span>1 group</span>
+                    <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,21 +93,41 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">5 methods,   5 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
                     </span>
-                    <div class="method-list-content failed suite-Default_suite">
+                    <div class="method-list-content passed suite-Default_suite">
                       <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Cucumber.Tests.testRunnerSmoke" class="method navigator-link" hash-for-method="runScenario(&quot;Smoke Testing&quot;, &quot;Emi Calculator&quot;)">runScenario("Smoke Testing", "Emi Calculator")</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="Main_TestNG.SmokeTesting" class="method navigator-link" hash-for-method="Loan_cal1">Loan_cal1</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Default_suite -->
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="Main_TestNG.SmokeTesting" class="method navigator-link" hash-for-method="Loan_cal2">Loan_cal2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="Main_TestNG.SmokeTesting" class="method navigator-link" hash-for-method="Loan_cal3">Loan_cal3</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="Main_TestNG.SmokeTesting" class="method navigator-link" hash-for-method="car_Loan">car_Loan</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="Main_TestNG.SmokeTesting" class="method navigator-link" hash-for-method="home_Loan">home_Loan</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Default_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -119,61 +139,53 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-failed">
+          <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">Cucumber.Tests.testRunnerSmoke</span>
+              <img src="passed.png"/>
+              <span class="class-name">Main_TestNG.SmokeTesting</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Smoke Testing&quot;, &quot;Emi Calculator&quot;)">
-                  </a> <!-- runScenario("Smoke Testing", "Emi Calculator") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Smoke Testing", "Emi Calculator")</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#car\-loan&quot;}
-  (Session info: chrome=120.0.6099.130)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4cab8756c52b30f8b99147f8f75bc262, findElement {using=id, value=car-loan}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.130, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57746}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57746/devtoo..., se:cdpVersion: 120.0.6099.130, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4cab8756c52b30f8b99147f8f75bc262
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy27.click(Unknown Source)
-	at Project_POM.CarPOM.CarClick(CarPOM.java:78)
-	at Cucumber.Steps.StepDefinitionRegression.car_loan_page_is_clicked(StepDefinitionRegression.java:142)
-	at ✽.Car loan page is clicked(file:///C:/Users/2303750/eclipse-workspace/MainProject-full/MainProject/src/main/java/Cucumber/Features/Emi_Cal.feature:26)
-
-</div> <!-- stack-trace -->
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
+                  <a name="Loan_cal1">
+                  </a> <!-- Loan_cal1 -->
+                  <span class="method-name">Loan_cal1</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Loan_cal2">
+                  </a> <!-- Loan_cal2 -->
+                  <span class="method-name">Loan_cal2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Loan_cal3">
+                  </a> <!-- Loan_cal3 -->
+                  <span class="method-name">Loan_cal3</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="car_Loan">
+                  </a> <!-- car_Loan -->
+                  <span class="method-name">car_Loan</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="home_Loan">
+                  </a> <!-- home_Loan -->
+                  <span class="method-name">home_Loan</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-failed -->
+          </div> <!-- suite-Default_suite-class-passed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\2303750\AppData\Local\Temp\1\testng-eclipse--1012119229\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\2303750\AppData\Local\Temp\2\testng-eclipse--745278685\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -182,7 +194,7 @@ Session ID: 4cab8756c52b30f8b99147f8f75bc262
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Cucumber.Tests.testRunnerSmoke&quot;/&gt;
+      &lt;class name=&quot;Main_TestNG.SmokeTesting&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -206,14 +218,6 @@ Session ID: 4cab8756c52b30f8b99147f8f75bc262
             <span class="header-content">Groups for Default suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="test-group">
-              <span class="test-group-name">cucumber</span>
-              <br/>
-              <div class="method-in-group">
-                <span class="method-in-group-name">runScenario</span>
-                <br/>
-              </div> <!-- method-in-group -->
-            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Default_suite" class="panel">
@@ -230,16 +234,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'runScenario')
-data.setCell(0, 2, 'Cucumber.Tests.testRunnerSmoke')
-data.setCell(0, 3, 13662);
+data.setCell(0, 1, 'car_Loan')
+data.setCell(0, 2, 'Main_TestNG.SmokeTesting')
+data.setCell(0, 3, 3210);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'home_Loan')
+data.setCell(1, 2, 'Main_TestNG.SmokeTesting')
+data.setCell(1, 3, 2623);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'Loan_cal1')
+data.setCell(2, 2, 'Main_TestNG.SmokeTesting')
+data.setCell(2, 3, 2418);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'Loan_cal3')
+data.setCell(3, 2, 'Main_TestNG.SmokeTesting')
+data.setCell(3, 3, 396);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'Loan_cal2')
+data.setCell(4, 2, 'Main_TestNG.SmokeTesting')
+data.setCell(4, 3, 378);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 13 seconds</span>
+              <span class="suite-total-time">Total running time: 9 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -265,20 +285,34 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Cucumber.Tests.testRunnerSmoke</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">Main_TestNG.SmokeTesting</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@168b4cb0)</span>
+                <span class="method-name">setup</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">runScenario("Smoke Testing", "Emi Calculator")</span>
-                <span class="method-start">42500 ms</span>
+                <span class="method-name">car_Loan</span>
+                <span class="method-start">28601 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">home_Loan</span>
+                <span class="method-start">31844 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Loan_cal1</span>
+                <span class="method-start">34473 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Loan_cal2</span>
+                <span class="method-start">36893 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Loan_cal3</span>
+                <span class="method-start">37278 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
-                <span class="method-name">tearDownClass</span>
-                <span class="method-start">56180 ms</span>
+                <span class="method-name">close</span>
+                <span class="method-start">37677 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

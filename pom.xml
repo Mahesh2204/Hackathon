@@ -40,11 +40,11 @@
     <version>7.15.0</version>
 </dependency>
 <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
-<dependency>
+<!--<dependency>
     <groupId>io.cucumber</groupId>
     <artifactId>cucumber-java</artifactId>
     <version>7.15.0</version>
-</dependency>
+</dependency>-->
 <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->
 <dependency>
     <groupId>io.cucumber</groupId>
@@ -59,17 +59,17 @@
     <scope>test</scope>
 </dependency>
 <!-- https://mvnrepository.com/artifact/com.vimalselvam/cucumber-extentsreport -->
-<dependency>
+<!--<dependency>
     <groupId>com.vimalselvam</groupId>
     <artifactId>cucumber-extentsreport</artifactId>
     <version>3.1.1</version>
-</dependency>
+</dependency>-->
 <!-- https://mvnrepository.com/artifact/com.vimalselvam/testng-extentsreport -->
-<dependency>
+<!--<dependency>
     <groupId>com.vimalselvam</groupId>
     <artifactId>testng-extentsreport</artifactId>
     <version>1.3.1</version>
-</dependency>
+</dependency>-->
 <dependency>
     <groupId>com.aventstack</groupId>
     <artifactId>extentreports</artifactId>

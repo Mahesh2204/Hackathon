@@ -1,6 +1,7 @@
 package Main_TestNG;
 
 import java.io.IOException;
+import java.net.MalformedURLException;
 import java.time.Duration;
 
 import org.openqa.selenium.WebDriver;
@@ -11,11 +12,11 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import Project_POM.CarPOM;
-import Project_POM.DriverSetup;
 import Project_POM.HomePOM;
 import Project_POM.LoanCal1;
 import Project_POM.LoanCal2;
 import Project_POM.LoanCal3;
+import Resources.DriverSetup;
 import Resources.Screenshots;
 
 public class SmokeTesting {
@@ -27,7 +28,7 @@ public class SmokeTesting {
 	DriverSetup d;
 	Screenshots ss;
 	@BeforeClass
-	public void setup() throws InterruptedException
+	public void setup() throws InterruptedException, MalformedURLException
 	{
 //		WebDriverManager.chromedriver().setup();
 		d = new DriverSetup();

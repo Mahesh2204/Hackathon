@@ -18,7 +18,7 @@ public class ExtentReportManager implements ITestListener
 	public ExtentTest test; // creating test case entries in the report and update status of the test methods
  
 	public void onStart(ITestContext context) {
-		sparkReporter=new ExtentSparkReporter("C:\\Users\\2303750\\eclipse-workspace\\MainProject-full\\MainProject\\Reports\\myreport.html");//specify location of the report
+		sparkReporter=new ExtentSparkReporter("C:\\Users\\2303750\\eclipse-workspace\\EMI\\MainProject-full\\MainProject\\Reports\\myreport.html");//specify location of the report
 		sparkReporter.config().setDocumentTitle("Automation Report"); // TiTle of report
 		sparkReporter.config().setReportName("Emi Calculator"); // name of the report
 		sparkReporter.config().setTheme(Theme.DARK);
