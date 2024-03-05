@@ -16,9 +16,7 @@ public class DriverSetup {
 
 	public WebDriver SelectDriver() throws MalformedURLException {
 		WebDriver d = null;
-		DesiredCapabilities ds = new DesiredCapabilities();
-		 ds.setBrowserName("chrome");
-		d = new RemoteWebDriver(new URL(huburl), ds);
+		d = new ChromeDriver();
 		//Scanner sc = new Scanner(System.in);
 		//System.out.println("Enter \n1 for remote webdriver\n2 for local webdriver");
 		// int x = sc.nextInt();
