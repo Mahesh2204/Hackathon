@@ -11,10 +11,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
 public class ExcelScript {
-	public String Car_P;
-	public String Car_I;
-	public String Car_LT;
-	public String Home_P, Home_DP, Home_LI, Home_LA, Home_LIT, Home_T, Home_LF;
+	public String Car_amt, Car_intst, Car_tenure;
+	public String Home_amt, Home_DP, Home_LI, Home_LIT, Home_T, Home_LF;
 	public String UI_amt, UI_intst, UI_tenure, UI_fee;
 	FileInputStream file;
 	public XSSFWorkbook workbook;
@@ -22,7 +20,7 @@ public class ExcelScript {
 
 	public ExcelScript() throws IOException {
 		file = new FileInputStream(
-				"C:\\Users\\2303750\\eclipse-workspace\\EMI\\MainProject-full\\MainProject\\DataSet\\EmiCalc_Data.xlsx");
+				"C:\\Users\\2303750\\eclipse-workspace\\EMI\\MainProject-full\\MainProject\\DataSet\\ExcelRead.xlsx");
 		workbook = new XSSFWorkbook(file);
 		sheet = workbook.getSheet("InputData");
 
@@ -31,17 +29,16 @@ public class ExcelScript {
 	public void CarLoan() {
 		// TODO Auto-generated method stub
 		XSSFRow currentRow = sheet.getRow(0);
-		Car_P = currentRow.getCell(1).toString();
-		Car_I = currentRow.getCell(2).toString();
-		Car_LT = currentRow.getCell(3).toString();
+		Car_amt = currentRow.getCell(1).toString();
+		Car_intst = currentRow.getCell(2).toString();
+		Car_tenure = currentRow.getCell(3).toString();
 	}
 
 	public void HomeLoan() throws IOException {
 		XSSFRow currentRow = sheet.getRow(1);
-		Home_P = currentRow.getCell(1).toString();
+		Home_amt = currentRow.getCell(1).toString();
 		Home_DP = currentRow.getCell(2).toString();
 		Home_LI = currentRow.getCell(3).toString();
-		// Home_LA=currentRow.getCell(3).toString();
 		Home_LIT = currentRow.getCell(4).toString();
 		Home_T = currentRow.getCell(5).toString();
 		Home_LF = currentRow.getCell(6).toString();
@@ -63,13 +60,11 @@ public class ExcelScript {
 	public void HomeLone_write(WebElement LoanTable) throws IOException {
 
 		FileOutputStream file = new FileOutputStream(
-				"C:\\Users\\2303750\\eclipse-workspace\\EMI\\MainProject-full\\MainProject\\DataSet\\EmiCalc_DataWrite.xlsx");
+				"C:\\Users\\2303750\\eclipse-workspace\\EMI\\MainProject-full\\MainProject\\DataSet\\ExcelWrite.xlsx");
 		XSSFWorkbook workbook = new XSSFWorkbook();
 		XSSFSheet sheet = workbook.createSheet();
 		int table_row = LoanTable.findElements(By.xpath("tr")).size();
-		System.out.println("There totally "+table_row+" row has been written into the excel");
-		System.out.println("=====================");
-		int i = 0;
+		System.out.println("There are totally "+table_row+" row in the tabulation");
 		String h1 = LoanTable.findElement(By.xpath("tr[1]/th[1]")).getText();
 		String h2 = LoanTable.findElement(By.xpath("tr[1]/th[2]")).getText();
 		String h3 = LoanTable.findElement(By.xpath("tr[1]/th[3]")).getText();
@@ -85,7 +80,8 @@ public class ExcelScript {
 		row.createCell(4).setCellValue(h5);
 		row.createCell(5).setCellValue(h6);
 		row.createCell(6).setCellValue(h7);
-
+		
+		int i = 0;
 		for (int r = 2; r <= table_row; r += 2) {
 
 			String year = LoanTable.findElement(By.xpath("tr[" + r + "]/td[1]")).getText();
@@ -106,25 +102,27 @@ public class ExcelScript {
 			row.createCell(6).setCellValue(Loan_Paid);
 
 		}
+		System.out.println("All the data has been written in excel");
+		
 		workbook.write(file);
 		workbook.close();
 		file.close();
 	}
 
-	public String getCar_P() {
-		return Car_P;
+	public String getCar_amt() {
+		return Car_amt;
 	}
 
-	public String getCar_I() {
-		return Car_I;
+	public String getCar_intst() {
+		return Car_intst;
 	}
 
-	public String getCar_LT() {
-		return Car_LT;
+	public String getCar_tenure() {
+		return Car_tenure;
 	}
 
-	public String getHome_P() {
-		return Home_P;
+	public String getHome_amt() {
+		return Home_amt;
 	}
 
 	public String getHome_DP() {

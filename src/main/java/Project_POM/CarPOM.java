@@ -80,28 +80,27 @@ ExcelScript ex;
 	public void Loan_Amount()
 	{
 		LoanAmount.sendKeys(Keys.CONTROL + "a");
-		LoanAmount.sendKeys(ex.getCar_P());
+		LoanAmount.sendKeys(ex.getCar_amt());
 	}
 	public void Loan_Interest()
 	{
 		LoanInterest.sendKeys(Keys.CONTROL + "a");
-		LoanInterest.sendKeys(ex.getCar_I());
+		LoanInterest.sendKeys(ex.getCar_intst());
 	}
 	
 	public void Loan_Tenure()
 	{
 		LoanTenure.sendKeys(Keys.CONTROL + "a");
-		LoanTenure.sendKeys(ex.getCar_LT());
+		LoanTenure.sendKeys(ex.getCar_tenure());
 		CarYearBtn.click();
 	}
 	
-	public String Loan_EMI()
-	{
-		String EMI = LoanEMI.getText();
-		System.out.print("EMI: ");
-		return EMI;
-		
-	}
+//	public void Loan_EMI()
+//	{
+//		String EMI = LoanEMI.getText();
+//		//return EMI;
+//		
+//	}
 	public void Menu_Click() {
 		
 		Cal.click();
@@ -116,24 +115,22 @@ ExcelScript ex;
 		double e, principle_amount;
 		double rate_of_interest;
 		int tenture_in_month;
-		String EMI=Loan_EMI();
-		System.out.println(EMI);
+		String EMI=LoanEMI.getText();
 		EMI = EMI.replace(",", "");
 		int intValue = Integer.parseInt(EMI);
-		System.out.println("The Loan EMI "+intValue);
+		System.out.println("Automated Monthly EMI: ₹"+intValue);
 		principle_amount = 1500000;
-		rate_of_interest = (9.5/12)/100;
+		rate_of_interest = (9.5/(12*100));
 		tenture_in_month = 12;
 		e = principle_amount * rate_of_interest;
-		Math.pow(2, 3);
 		e = e * Math.pow(1+rate_of_interest, tenture_in_month);
 		e = e/(Math.pow(1+rate_of_interest, tenture_in_month)-1);
-		System.out.println("Monthly EMI to be paid "+e);
+		System.out.println("Calculated Monthly EMI: ₹"+Math.round(e));
 		double Month_Interest =  e*(rate_of_interest);
-		System.out.println("Monthly interest to be paid "+Month_Interest);
+		System.out.println("Monthly interest: ₹"+Math.round(Month_Interest));
 		double Month_principle = e - Month_Interest ;
-		System.out.println("Monthly interest to be paid "+Month_principle);
-
+		System.out.println("Monthly principle: ₹"+Math.round(Month_principle));
+		
 
 	}
 

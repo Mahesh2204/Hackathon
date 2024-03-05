@@ -8,7 +8,8 @@ import io.cucumber.testng.CucumberOptions;
 					glue="Cucumber.Steps",
 					plugin= {"pretty", "html:Reports/Cucumber_Report.html", 
 							  "rerun:target/rerun.txt"},
-					tags = "@RegressionTesting"
+					//tags = "@RegressionTesting"
+					tags="@SmokeTesting"
 					
 				)
 public class testRunners extends AbstractTestNGCucumberTests {

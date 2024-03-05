@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Main_TestNG.SmokeTesting">
+      <class name="Main_TestNG.TestingMethods">
         <methods>
+          <include name="Car_Loan"/>
+          <include name="testLogo"/>
           <include name="setup"/>
-          <include name="Loan_cal3"/>
-          <include name="close"/>
+          <include name="close_b"/>
         </methods>
-      </class> <!-- Main_TestNG.SmokeTesting -->
+      </class> <!-- Main_TestNG.TestingMethods -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

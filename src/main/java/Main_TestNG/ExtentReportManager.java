@@ -1,13 +1,17 @@
 package Main_TestNG;
+import java.awt.Desktop;
+import java.io.File;
+import java.io.IOException;
+
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
-import com.aventstack.extentreports.Status;
 
  
  
@@ -38,7 +42,7 @@ public class ExtentReportManager implements ITestListener
 		test = extent.createTest(result.getName()); // create a new enty in the report
 		test.log(Status.PASS, "Test case PASSED is:" + result.getName()); // update status p/f/s
 		try {
-			String imgPath = new RegressionTesting().captureScreen(result.getName());
+			String imgPath = new TestingMethods().captureScreen(result.getName());
 			test.addScreenCaptureFromPath(imgPath);
 		} catch (Exception e1) {
 			e1.printStackTrace();
@@ -62,7 +66,15 @@ public class ExtentReportManager implements ITestListener
 	
 	public void onFinish(ITestContext context) {
 		extent.flush();
+		 String reportFilePath = "C:\\Users\\2303750\\eclipse-workspace\\EMI\\MainProject-full\\MainProject\\Reports\\myreport.html";
+	        File htmlFile = new File(reportFilePath);
+	        try {
+				Desktop.getDesktop().browse(htmlFile.toURI());
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
 	}
+
 
 }
 

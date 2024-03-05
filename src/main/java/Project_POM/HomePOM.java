@@ -55,7 +55,7 @@ public class HomePOM {
 	
 	public void Home_Loan_Set() {
 		Home_P.sendKeys(Keys.CONTROL + "a");
-        Home_P.sendKeys(ex.getHome_P());
+        Home_P.sendKeys(ex.getHome_amt());
         Home_DP.sendKeys(Keys.CONTROL + "a");
         Home_DP.sendKeys(ex.getHome_DP());
         Home_LI.sendKeys(Keys.CONTROL + "a");

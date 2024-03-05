@@ -21,7 +21,9 @@ public class DriverSetup {
 		int x = sc.nextInt();
 		if (x == 1) {
 			DesiredCapabilities ds = new DesiredCapabilities();
-			ds.setCapability("browserName", "chrome");
+			//ds.setCapability("browserName", "chrome");
+			ds.setBrowserName("chrome");
+			//ds.setBrowserName("MicrosoftEdge");
 
 			d = new RemoteWebDriver(new URL(huburl), ds);
 		} else if (x == 2) {

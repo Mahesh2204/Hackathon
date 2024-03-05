@@ -1,5 +1,7 @@
 package Cucumber.Steps;
 
+import java.awt.Desktop;
+import java.io.File;
 import java.io.IOException;
 import java.time.Duration;
 import org.openqa.selenium.OutputType;
@@ -25,6 +27,7 @@ public class Hooks {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
   
 }
+
 	@AfterStep
   public void addScreenshot(Scenario scenario) {
   if(!scenario.isFailed()) {
@@ -33,8 +36,16 @@ public class Hooks {
      scenario.attach(screenshot, "image/png",scenario.getName());
       }
 	}
+	
 	@AfterAll
 	public static void before_or_after_all1() {
 		driver.quit();
+		String reportFilePath = "C:\\Users\\2303750\\eclipse-workspace\\EMI\\MainProject-full\\MainProject\\Reports\\Cucumber_Report.html";
+        File htmlFile = new File(reportFilePath);
+        try {
+			Desktop.getDesktop().browse(htmlFile.toURI());
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 }
