@@ -13,6 +13,7 @@ import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Listeners;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import Project_POM.CarPOM;
@@ -34,12 +35,12 @@ public class TestingMethods {
 	LoanCal2 lc2;
 	LoanCal3 lc3;
 	DriverSetup d;
-
+    @Parameters({"browser"})
 	@BeforeClass(alwaysRun = true)
-	void setup() throws InterruptedException, IOException {
+	void setup(String browser) throws InterruptedException, IOException {
 //		WebDriverManager.chromedriver().setup();
 		d = new DriverSetup();
-		driver = d.SelectDriver();
+		driver = d.SelectDriver(browser);
 		driver.get("https://emicalculator.net/");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));

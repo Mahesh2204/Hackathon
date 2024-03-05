@@ -5,10 +5,20 @@
     <classes>
       <class name="Main_TestNG.TestingMethods">
         <methods>
-          <include name="Car_Loan"/>
+          <include name="Loan_cal1"/>
+          <include name="home_Loan"/>
           <include name="testLogo"/>
+          <include name="EMI_Calculation"/>
+          <include name="Loan_cal2"/>
           <include name="setup"/>
           <include name="close_b"/>
+          <include name="Loan_cal3"/>
+          <include name="Car_Loan"/>
+          <include name="Car_Loan_Details"/>
+          <include name="Calc1"/>
+          <include name="Home_page"/>
+          <include name="Calc3"/>
+          <include name="Calc2"/>
         </methods>
       </class> <!-- Main_TestNG.TestingMethods -->
     </classes>

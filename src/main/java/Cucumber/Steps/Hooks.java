@@ -18,10 +18,11 @@ import io.cucumber.java.Scenario;
 public class Hooks {
 	public static WebDriver driver;
 	static DriverSetup d;
+	static String browser="chrome";
 	@BeforeAll
     public static void before_or_after_all() throws IOException, InterruptedException{
 		d = new DriverSetup();
-		driver = d.SelectDriver();
+		driver = d.SelectDriver(browser);
 		driver.get("https://emicalculator.net/");
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));

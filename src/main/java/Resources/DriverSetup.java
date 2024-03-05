@@ -12,28 +12,33 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class DriverSetup {
 
-	String huburl = "http://10.66.136.70:4444";
+	String huburl = "http://localhost:4444/wd/hub";
 
-	public WebDriver SelectDriver() throws MalformedURLException {
+	public WebDriver SelectDriver(String browser) throws MalformedURLException {
 		WebDriver d = null;
+//		switch (browser) {
+//		case "chrome":
+//			d = new ChromeDriver();
+//			break;
+//		case "edge":
+//			d = new EdgeDriver();
+//			break;
+//		default:
+//			System.out.println("Wrong choice\n");
+//		}
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter \n1 for remote webdriver\n2 for local webdriver");
 		int x = sc.nextInt();
 		if (x == 1) {
 			DesiredCapabilities ds = new DesiredCapabilities();
-			//ds.setCapability("browserName", "chrome");
 			ds.setBrowserName("chrome");
-			//ds.setBrowserName("MicrosoftEdge");
-
 			d = new RemoteWebDriver(new URL(huburl), ds);
 		} else if (x == 2) {
-			System.out.println("Enter the browser to execute \n1.Chrome\n2.Edge");
-			int a = sc.nextInt();
-			switch (a) {
-			case 1:
+			switch (browser) {
+			case "chrome":
 				d = new ChromeDriver();
 				break;
-			case 2:
+			case "edge":
 				d = new EdgeDriver();
 				break;
 			default:
