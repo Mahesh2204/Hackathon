@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="7" total="15" passed="8" failed="0" skipped="0">
+<testng-results ignored="8" total="16" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-05T14:46:26 IST" name="Suite" finished-at="2024-03-05T14:49:27 IST" duration-ms="180919">
+  <suite started-at="2024-03-05T17:23:55 IST" name="Suite" finished-at="2024-03-05T17:26:31 IST" duration-ms="156451">
     <groups>
       <group name="SmokeTesting">
-        <method signature="TestingMethods.Car_Loan()[pri:2, instance:Main_TestNG.TestingMethods@298a5e20]" name="Car_Loan" class="Main_TestNG.TestingMethods"/>
-        <method signature="TestingMethods.Loan_cal1()[pri:7, instance:Main_TestNG.TestingMethods@298a5e20]" name="Loan_cal1" class="Main_TestNG.TestingMethods"/>
-        <method signature="TestingMethods.Loan_cal2()[pri:9, instance:Main_TestNG.TestingMethods@298a5e20]" name="Loan_cal2" class="Main_TestNG.TestingMethods"/>
-        <method signature="TestingMethods.Loan_cal3()[pri:11, instance:Main_TestNG.TestingMethods@298a5e20]" name="Loan_cal3" class="Main_TestNG.TestingMethods"/>
-        <method signature="TestingMethods.home_Loan()[pri:5, instance:Main_TestNG.TestingMethods@298a5e20]" name="home_Loan" class="Main_TestNG.TestingMethods"/>
+        <method signature="TestingMethods.Car_Loan()[pri:2, instance:Main_TestNG.TestingMethods@2a7f1f10]" name="Car_Loan" class="Main_TestNG.TestingMethods"/>
+        <method signature="TestingMethods.Loan_cal1()[pri:7, instance:Main_TestNG.TestingMethods@2a7f1f10]" name="Loan_cal1" class="Main_TestNG.TestingMethods"/>
+        <method signature="TestingMethods.Loan_cal2()[pri:9, instance:Main_TestNG.TestingMethods@2a7f1f10]" name="Loan_cal2" class="Main_TestNG.TestingMethods"/>
+        <method signature="TestingMethods.Loan_cal3()[pri:11, instance:Main_TestNG.TestingMethods@2a7f1f10]" name="Loan_cal3" class="Main_TestNG.TestingMethods"/>
+        <method signature="TestingMethods.home_Loan()[pri:5, instance:Main_TestNG.TestingMethods@2a7f1f10]" name="home_Loan" class="Main_TestNG.TestingMethods"/>
       </group> <!-- SmokeTesting -->
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Cucumber_Tests.testRunners@7ae0a9ec]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Cucumber_Tests.testRunners@35841320]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
       <group name="RegressionTesting">
-        <method signature="TestingMethods.Car_Loan()[pri:2, instance:Main_TestNG.TestingMethods@298a5e20]" name="Car_Loan" class="Main_TestNG.TestingMethods"/>
-        <method signature="TestingMethods.Loan_cal1()[pri:7, instance:Main_TestNG.TestingMethods@298a5e20]" name="Loan_cal1" class="Main_TestNG.TestingMethods"/>
-        <method signature="TestingMethods.Loan_cal2()[pri:9, instance:Main_TestNG.TestingMethods@298a5e20]" name="Loan_cal2" class="Main_TestNG.TestingMethods"/>
-        <method signature="TestingMethods.Loan_cal3()[pri:11, instance:Main_TestNG.TestingMethods@298a5e20]" name="Loan_cal3" class="Main_TestNG.TestingMethods"/>
-        <method signature="TestingMethods.home_Loan()[pri:5, instance:Main_TestNG.TestingMethods@298a5e20]" name="home_Loan" class="Main_TestNG.TestingMethods"/>
+        <method signature="TestingMethods.Car_Loan()[pri:2, instance:Main_TestNG.TestingMethods@2a7f1f10]" name="Car_Loan" class="Main_TestNG.TestingMethods"/>
+        <method signature="TestingMethods.Loan_cal1()[pri:7, instance:Main_TestNG.TestingMethods@2a7f1f10]" name="Loan_cal1" class="Main_TestNG.TestingMethods"/>
+        <method signature="TestingMethods.Loan_cal2()[pri:9, instance:Main_TestNG.TestingMethods@2a7f1f10]" name="Loan_cal2" class="Main_TestNG.TestingMethods"/>
+        <method signature="TestingMethods.Loan_cal3()[pri:11, instance:Main_TestNG.TestingMethods@2a7f1f10]" name="Loan_cal3" class="Main_TestNG.TestingMethods"/>
+        <method signature="TestingMethods.home_Loan()[pri:5, instance:Main_TestNG.TestingMethods@2a7f1f10]" name="home_Loan" class="Main_TestNG.TestingMethods"/>
       </group> <!-- RegressionTesting -->
     </groups>
-    <test started-at="2024-03-05T14:46:26 IST" name="EdgeTest" finished-at="2024-03-05T14:46:56 IST" duration-ms="30572">
+    <test started-at="2024-03-05T17:23:55 IST" name="EdgeTest" finished-at="2024-03-05T17:24:19 IST" duration-ms="23910">
       <class name="Main_TestNG.TestingMethods">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:Main_TestNG.TestingMethods@298a5e20]" started-at="2024-03-05T14:46:26 IST" name="setup" finished-at="2024-03-05T14:46:49 IST" duration-ms="22926" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:Main_TestNG.TestingMethods@2a7f1f10]" started-at="2024-03-05T17:23:55 IST" name="setup" finished-at="2024-03-05T17:24:13 IST" duration-ms="17955" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -35,46 +35,46 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="Car_Loan()[pri:2, instance:Main_TestNG.TestingMethods@298a5e20]" started-at="2024-03-05T14:46:49 IST" name="Car_Loan" finished-at="2024-03-05T14:46:49 IST" duration-ms="290" status="PASS">
+        <test-method signature="Car_Loan()[pri:2, instance:Main_TestNG.TestingMethods@2a7f1f10]" started-at="2024-03-05T17:24:13 IST" name="Car_Loan" finished-at="2024-03-05T17:24:14 IST" duration-ms="216" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Car_Loan -->
-        <test-method signature="home_Loan()[pri:5, instance:Main_TestNG.TestingMethods@298a5e20]" started-at="2024-03-05T14:46:50 IST" name="home_Loan" finished-at="2024-03-05T14:46:53 IST" duration-ms="2559" status="PASS">
+        <test-method signature="home_Loan()[pri:5, instance:Main_TestNG.TestingMethods@2a7f1f10]" started-at="2024-03-05T17:24:14 IST" name="home_Loan" finished-at="2024-03-05T17:24:15 IST" duration-ms="1335" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- home_Loan -->
-        <test-method signature="Loan_cal1()[pri:7, instance:Main_TestNG.TestingMethods@298a5e20]" started-at="2024-03-05T14:46:53 IST" name="Loan_cal1" finished-at="2024-03-05T14:46:55 IST" duration-ms="1344" status="PASS">
+        <test-method signature="Loan_cal1()[pri:7, instance:Main_TestNG.TestingMethods@2a7f1f10]" started-at="2024-03-05T17:24:16 IST" name="Loan_cal1" finished-at="2024-03-05T17:24:17 IST" duration-ms="1302" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Loan_cal1 -->
-        <test-method signature="Loan_cal2()[pri:9, instance:Main_TestNG.TestingMethods@298a5e20]" started-at="2024-03-05T14:46:55 IST" name="Loan_cal2" finished-at="2024-03-05T14:46:55 IST" duration-ms="138" status="PASS">
+        <test-method signature="Loan_cal2()[pri:9, instance:Main_TestNG.TestingMethods@2a7f1f10]" started-at="2024-03-05T17:24:17 IST" name="Loan_cal2" finished-at="2024-03-05T17:24:17 IST" duration-ms="141" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Loan_cal2 -->
-        <test-method signature="Loan_cal3()[pri:11, instance:Main_TestNG.TestingMethods@298a5e20]" started-at="2024-03-05T14:46:55 IST" name="Loan_cal3" finished-at="2024-03-05T14:46:55 IST" duration-ms="130" status="PASS">
+        <test-method signature="Loan_cal3()[pri:11, instance:Main_TestNG.TestingMethods@2a7f1f10]" started-at="2024-03-05T17:24:18 IST" name="Loan_cal3" finished-at="2024-03-05T17:24:18 IST" duration-ms="109" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Loan_cal3 -->
-        <test-method is-config="true" signature="close_b()[pri:0, instance:Main_TestNG.TestingMethods@298a5e20]" started-at="2024-03-05T14:46:56 IST" name="close_b" finished-at="2024-03-05T14:46:56 IST" duration-ms="386" status="PASS">
+        <test-method is-config="true" signature="close_b()[pri:0, instance:Main_TestNG.TestingMethods@2a7f1f10]" started-at="2024-03-05T17:24:18 IST" name="close_b" finished-at="2024-03-05T17:24:19 IST" duration-ms="341" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close_b -->
       </class> <!-- Main_TestNG.TestingMethods -->
     </test> <!-- EdgeTest -->
-    <test started-at="2024-03-05T14:47:06 IST" name="chromeTest" finished-at="2024-03-05T14:49:27 IST" duration-ms="140967">
+    <test started-at="2024-03-05T17:24:27 IST" name="chromeTest" finished-at="2024-03-05T17:26:31 IST" duration-ms="123906">
       <class name="Cucumber_Tests.testRunners">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:Cucumber_Tests.testRunners@7ae0a9ec]" started-at="2024-03-05T14:47:06 IST" name="setUpClass" finished-at="2024-03-05T14:47:37 IST" duration-ms="31318" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:Cucumber_Tests.testRunners@35841320]" started-at="2024-03-05T17:24:27 IST" name="setUpClass" finished-at="2024-03-05T17:24:39 IST" duration-ms="12085" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@4e31b64d]]>
+                <![CDATA[org.testng.TestRunner@434b2e0c]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Cucumber_Tests.testRunners@7ae0a9ec]" started-at="2024-03-05T14:47:37 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-03-05T14:47:40 IST" duration-ms="2945" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Cucumber_Tests.testRunners@35841320]" started-at="2024-03-05T17:24:39 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-03-05T17:24:42 IST" duration-ms="2801" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -90,7 +90,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Cucumber_Tests.testRunners@7ae0a9ec]" started-at="2024-03-05T14:47:40 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-03-05T14:48:01 IST" duration-ms="21447" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Cucumber_Tests.testRunners@35841320]" started-at="2024-03-05T17:24:42 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-03-05T17:25:06 IST" duration-ms="23440" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -106,7 +106,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Cucumber_Tests.testRunners@7ae0a9ec]" started-at="2024-03-05T14:48:01 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-03-05T14:49:19 IST" duration-ms="77731" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Cucumber_Tests.testRunners@35841320]" started-at="2024-03-05T17:25:06 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-03-05T17:26:24 IST" duration-ms="77981" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -122,7 +122,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:Cucumber_Tests.testRunners@7ae0a9ec]" started-at="2024-03-05T14:49:19 IST" name="tearDownClass" finished-at="2024-03-05T14:49:27 IST" duration-ms="7508" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:Cucumber_Tests.testRunners@35841320]" started-at="2024-03-05T17:26:24 IST" name="tearDownClass" finished-at="2024-03-05T17:26:31 IST" duration-ms="7574" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

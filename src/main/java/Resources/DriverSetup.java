@@ -16,24 +16,13 @@ public class DriverSetup {
 
 	public WebDriver SelectDriver(String browser) throws MalformedURLException {
 		WebDriver d = null;
-//		switch (browser) {
-//		case "chrome":
-//			d = new ChromeDriver();
-//			break;
-//		case "edge":
-//			d = new EdgeDriver();
-//			break;
-//		default:
-//			System.out.println("Wrong choice\n");
-//		}
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter \n1 for remote webdriver\n2 for local webdriver");
-		int x = sc.nextInt();
-		if (x == 1) {
+		String Run = "local";
+
+		if (Run.equals("remote")) {
 			DesiredCapabilities ds = new DesiredCapabilities();
 			ds.setBrowserName("chrome");
 			d = new RemoteWebDriver(new URL(huburl), ds);
-		} else if (x == 2) {
+		} else if (Run.equals("local")) {
 			switch (browser) {
 			case "chrome":
 				d = new ChromeDriver();
@@ -45,6 +34,7 @@ public class DriverSetup {
 				System.out.println("Wrong choice\n");
 			}
 		}
+
 		return d;
 	}
 

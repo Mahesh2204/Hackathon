@@ -154,6 +154,7 @@ public class TestingMethods {
 		System.out.println("Test Scenario 3 successfully completed");
 		System.out.println("=====================");
 	}
+	
 
 	public String captureScreen(String name) {
 		TakesScreenshot takesScreenshot = (TakesScreenshot) driver;
